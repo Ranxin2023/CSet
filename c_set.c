@@ -139,6 +139,8 @@ void test1()
     clock_t time_set_end = clock();
     time_difference = (double)(time_set_end - time_set_start) / CLOCKS_PER_SEC;
     printf("time spent for set_find with size %d:%f\n", TEST_SIZE, time_difference);
+    free(arr);
+    free(s_arr);
     free(s->arr);
     free(s);
 }
