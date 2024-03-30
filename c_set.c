@@ -70,6 +70,7 @@ int normal_find(int *arr, int size, int target)
 }
 int set_find(CINTSET *s, int target)
 {
+    sort(s);
     int l = 0, r = s->size - 1;
     while (l <= r)
     {
