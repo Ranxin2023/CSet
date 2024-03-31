@@ -80,8 +80,8 @@ void append(CINTSET *s, int value)
         s->arr = (int *)realloc(s->arr, sizeof(int) * (s->size + 1));
     }
     s->arr[s->size] = value;
-    sort(s);
     s->size += 1;
+    sort(s);
 }
 int normal_find(int *arr, int size, int target)
 {
