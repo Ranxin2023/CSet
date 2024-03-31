@@ -128,6 +128,7 @@ void print_set(CINTSET *s)
     {
         printf("%d\t", s->arr[i]);
     }
+    printf("\n");
 }
 
 // This is test for time complexity of set
@@ -191,11 +192,11 @@ void test1()
 
 int main()
 {
-    // int arr[] = {6, 0, 5, 3, 4, 5, 2, 6, 5, 1, 10, 6, 7};
-    // CINTSET *s = initialize_int_set_with_arr(arr, sizeof(arr) / sizeof(int));
-    // append(s, 10);
-    // print_set(s);
-    // printf("Whether 100 exist in set:%d", set_find(s, 100));
-    test1();
+    int arr[] = {6, 0, 5, 3, 4, 5, 2, 6, 5, 1, 10, 6, 7};
+    CINTSET *s = initialize_int_set_with_arr(arr, sizeof(arr) / sizeof(int));
+    append(s, 10);
+    print_set(s);
+    printf("Whether 100 exist in set:%d", set_find(s, 100));
+    // test1();
     return 0;
 }
