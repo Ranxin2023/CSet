@@ -3,7 +3,7 @@
 #include <string.h>
 #include <time.h>
 
-#define TEST_SIZE 30000
+#define TEST_SIZE 100000
 typedef struct int_set
 {
     size_t size;
